@@ -2,7 +2,7 @@
 
 # 1. 什么是 Generator 函数
 
-在 JavaScript 中，一个函数一旦开始执行，就会运行到最后或遇到return时结束，运行期间不会有其它代码能够打断它，也不能从外部再传入值到函数体内
+在 JavaScript 中，一个函数一旦开始执行，就会运行到最后或遇到 return 时结束，运行期间不会有其它代码能够打断它，也不能从外部再传入值到函数体内
 
 而 Generator 函数（生成器）的出现使得打破函数的完整运行成为了可能，其语法行为与传统函数完全不同
 
@@ -81,7 +81,7 @@ Generator 函数是 ES6 提供的一种异步编程解决方案，形式上也�
 
 用于遍历 Generator 返回值 - 迭代器对象
 
-next() 参数：yield 表达式本身没有返回值，或者说总是返回 undefined。next 方法可以带一个参数，该参数就会被当作上一个 yield 表达式的返回值
+**next() 参数**：yield 表达式本身没有返回值，或者说总是返回 undefined。next 方法可以带一个参数，该参数就会被当作上一个 yield 表达式的返回值
 
 ```js
 {
@@ -105,7 +105,7 @@ Generator 函数从暂停状态到恢复运行，它的上下文状态（context
 
 Tips:
 
-Generator 函数返回的遍历器对象，还有一个 return 方法，可以返回给定的值(若没有提供参数，则返回值的value属性为 undefined)，并且**终结**遍历 Generator 函数
+Generator 函数返回的遍历器对象，还有一个 return 方法，可以返回给定的值(若没有提供参数，则返回值的value属性为 undefined)，并且 **终结** 遍历 Generator 函数
 
 ```js
 {
@@ -147,7 +147,7 @@ Generator 函数返回的遍历器对象，还有一个 return 方法，可以�
 }
 ```
 
-# 3. Promise、Generator、asynv/await
+# 3. Promise、Generator、async/await
 
 ### a. Promise 
 
